@@ -1,0 +1,23 @@
+{
+  "datasets":
+  [
+    {
+      "label": "Risk 1",
+      "borderColor": "#000000",
+      "pointRadius": 20,
+      "data": [{
+        "x": 2,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Risk 2",
+      "borderColor": "#000000",
+      "pointRadius": 20,
+      "data": [{
+        "x": 1,
+        "y": 2
+      }]
+    }
+  ]
+}

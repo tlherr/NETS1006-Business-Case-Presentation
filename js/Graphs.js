@@ -1,43 +1,14 @@
 (function(reveal) {
 
     //Data
-    var currentExposures = {
-        datasets:
-            [
-                {
-                    label: "Risk 1",
-                    borderColor: '#000000',
-                    backgroundColor: randomColor(100),
-                    pointRadius: 20,
-                    data: [{
-                        "x": 2,
-                        "y": 3
-                    }]
-                },
-                {
-                    label: "Risk 2",
-                    borderColor: '#000000',
-                    backgroundColor: randomColor(100),
-                    pointRadius: 20,
-                    data: [{
-                        "x": 1,
-                        "y": 2
-                    }]
-                }
-            ]
-    };
+
+
 
     reveal.addEventListener( 'slidechanged', function( event ) {
-
-        switch (event.currentSlide.id) {
-            default:
-                return;
-            case "current-exposures-ranking":
-                buildChart(event.currentSlide.getElementsByTagName("canvas")[0], "Current Exposures", currentExposures);
-                break;
+        if(event.currentSlide.dataset.hasChart==="true") {
+            buildChart(event.currentSlide.dataset.canvasId, event.currentSlide.dataset.setName);
         }
-
-    } );
+    });
 
     function loadJSON(filename, callback) {
 
@@ -64,38 +35,49 @@
     }
 
 
-    function buildChart(element, title, dataSet) {
+    function buildChart(elementId, dataSetName) {
 
-        var ctx = element.getContext('2d');
+        var ctx = document.getElementById(elementId).getContext('2d');
 
-        chart = Chart.Scatter(ctx, {
-            data: dataSet,
-            options: {
-                legend: {
-                  position: 'right'
-                },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            min: 0,
-                            max: 5,
-                            stepsize: 1
-                        }
-                    }],
-                    xAxes: [{
-                        ticks: {
-                            min: 0,
-                            max: 5,
-                            stepsize: 1
-                        }
-                    }]
-                },
-                title: {
-                    display: true,
-                    text: title
-                }
+        loadJSON("data/" + dataSetName + ".json", function(response) {
+
+            var dataSet = JSON.parse(response);
+            //Iterate over datasets, set backgroundColor of each to randomColor
+
+            for (var index in dataSet.datasets) {
+                dataSet.datasets[index].backgroundColor = randomColor(100);
             }
+
+
+            chart = Chart.Scatter(ctx, {
+                data: dataSet,
+                options: {
+                    legend: {
+                        position: 'right'
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                min: 0,
+                                max: 5,
+                                stepsize: 1
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                min: 0,
+                                max: 5,
+                                stepsize: 1
+                            }
+                        }]
+                    },
+                    title: {
+                        display: false
+                    }
+                }
+            });
         });
+
 
     }
 

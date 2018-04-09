@@ -149,6 +149,14 @@
 			</aside>
 		</section>
 
+		<section id="business-expectations">
+			<h2>Business Expectations</h2>
+			<ul>
+				<li>Stay up: Power Outage, Server Crash</li>
+			</ul>
+		</section>
+
+
 		<section id="business-requirements">
 			<h2>Business Requirements</h2>
 			<ul>
@@ -291,8 +299,11 @@
 
 			</section>
 
-			<section id="current-exposures-application">
+			<section id="current-exposures-application" data-has-chart="true" data-canvas-id="current-exposures-application-matrix"
+					 data-set-name="currentExposuresApplication" data-background-color="white">
 				<h2>Application/Middleware</h2>
+
+				<canvas id="current-exposures-application-matrix"></canvas>
 
 			</section>
 
@@ -306,10 +317,11 @@
 
 			</section>
 
-			<section id="current-exposures-ranking" data-has-chart="true" data-background-color="white">
+			<section id="current-exposures-ranking" data-has-chart="true" data-canvas-id="current-exposures-matrix"
+					 data-set-name="currentExposuresOverall" data-background-color="white">
 				<h4>Ranking Exposures</h4>
 
-				<canvas id="current-exposures"></canvas>
+				<canvas id="current-exposures-matrix"></canvas>
 
 				<a href="#/current-exposures-title">
 					<img width="46" height="75" data-src="img/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
