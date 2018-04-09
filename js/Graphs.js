@@ -46,6 +46,11 @@
 
             for (var index in dataSet.datasets) {
                 dataSet.datasets[index].backgroundColor = randomColor(100);
+                dataSet.datasets[index].borderColor = "#000000";
+                dataSet.datasets[index].pointRadius = 20;
+                dataSet.datasets[index].pointHoverRadius = 20;
+
+
             }
 
 
@@ -73,6 +78,14 @@
                     },
                     title: {
                         display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function(tooltipItem, data) {
+                                var label = data.datasets[tooltipItem.datasetIndex].label;
+                                return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+                            }
+                        }
                     }
                 }
             });

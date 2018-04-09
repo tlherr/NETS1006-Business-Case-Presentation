@@ -1,0 +1,47 @@
+{
+  "datasets":
+  [
+    {
+      "label": "Coding Error",
+      "data": [{
+        "x": 3,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Bad Deployment",
+      "data": [{
+        "x": 3,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Loss of monitoring",
+      "data": [{
+        "x": 2,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Hung JVM",
+      "data": [{
+        "x": 4,
+        "y": 3
+      }]
+    },
+    {
+      "label": "App Failure",
+      "data": [{
+        "x": 2,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Resource Exhaustion",
+      "data": [{
+        "x": 5,
+        "y": 4
+      }]
+    }
+  ]
+}
