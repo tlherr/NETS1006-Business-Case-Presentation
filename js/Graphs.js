@@ -1,12 +1,56 @@
-(function(reveal) {
+(function(reveal, chartjs) {
 
-    //Data
+
+    chartjs.pluginService.register({
+        beforeDraw: function (chart, easing) {
+            if (chart.config.type === "scatter") {
+                var ctx = chart.chart.ctx;
+                var chartArea = chart.chartArea;
+
+                var chartWidth = chartArea.right - chartArea.left;
+                var chartHeight = chartArea.bottom - chartArea.top;
+
+                var pixels = 10;
+
+                var xpos = chartArea.left;
+                var ypos = chartArea.bottom-(chartHeight/pixels);
+
+
+                //Step up each y line
+                for (var i = 0; i < pixels; i++) {
+
+                    //Make each x "cell"
+                    for (var j = 0; j < pixels; j++) {
+
+                        //The further right we are, the more red we want
+                        //The further top we are, the more red we want
+
+                        //Need to start at 100 and end at 255 in pixel steps
+                        var red = (255 - (pixels) * i);
+                        var green = (255 - (pixels) * j);
+
+                        ctx.fillStyle = 'rgb(' + red + ', ' + green + ', 0)';
+
+                        ctx.fillRect(xpos, ypos, (chartWidth/pixels), (chartHeight/pixels));
+                        xpos+=(chartWidth/pixels);
+                    }
+
+                    xpos = chartArea.left;
+                    //Advance to next row
+                    ypos-=(chartHeight/pixels);
+                }
+
+                ctx.save();
+            }
+        }
+    });
+
 
 
 
     reveal.addEventListener( 'slidechanged', function( event ) {
         if(event.currentSlide.dataset.hasChart==="true") {
-            buildChart(event.currentSlide.dataset.canvasId, event.currentSlide.dataset.setName);
+            setTimeout(buildChart(event.currentSlide.dataset.canvasId, event.currentSlide.dataset.setName), 2000);
         }
     });
 
@@ -39,18 +83,16 @@
 
         var ctx = document.getElementById(elementId).getContext('2d');
 
-        loadJSON("data/" + dataSetName + ".json", function(response) {
+        loadJSON(dataSetName, function(response) {
 
             var dataSet = JSON.parse(response);
             //Iterate over datasets, set backgroundColor of each to randomColor
 
             for (var index in dataSet.datasets) {
-                dataSet.datasets[index].backgroundColor = randomColor(100);
+                //dataSet.datasets[index].backgroundColor = randomColor(100);
                 dataSet.datasets[index].borderColor = "#000000";
                 dataSet.datasets[index].pointRadius = 20;
                 dataSet.datasets[index].pointHoverRadius = 20;
-
-
             }
 
 
@@ -62,6 +104,10 @@
                     },
                     scales: {
                         yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Likelihood'
+                            },
                             ticks: {
                                 min: 0,
                                 max: 5,
@@ -69,6 +115,10 @@
                             }
                         }],
                         xAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Impact'
+                            },
                             ticks: {
                                 min: 0,
                                 max: 5,
@@ -95,5 +145,5 @@
     }
 
 
-})(Reveal);
+})(Reveal, Chart);
 

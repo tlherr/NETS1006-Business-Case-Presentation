@@ -67,14 +67,17 @@
 			<ul>
 				<li>Software consultancy providing Software as a Service (SaaS) for larger enterprises</li>
 				<li> 35 Staff including:
-					<ul>
-						<li>Development</li>
-						<li>Testing</li>
-						<li>Implementation</li>
-						<li>Service Provision</li>
-						<li>Sales</li>
-						<li>Marketing</li>
-						<li>Finance</li>
+					<ul style="columns: 2;">
+						<li>Development (8)</li>
+						<li>QA (2)</li>
+						<li>OPS (5)</li>
+						<li>UX (3)</li>
+						<li>Legal (1)</li>
+						<li>Marketing (2)</li>
+						<li>Sales (2) 3 indept contract</li>
+						<li>Finance/Administration (2)</li>
+						<li>Support/Helpdesk (4)</li>
+						<li>IT Auditor/Risk Management (1)</li>
 					</ul>
 				</li>
 			</ul>
@@ -127,11 +130,6 @@
 				<p>Private Company</p>
 				<p>Under 20 Employees</p>
 			</section>
-
-			<section data-background-image="img/OfficeLayoutV1.jpg" data-background-size="contain" data-background-position="no-repeat">
-
-			</section>
-
 		</section>
 
 		<section id="customers-expectations">
@@ -266,31 +264,42 @@
 
 
 		<section>
+
+			<section id="current-dependency-diagram" data-background-iframe="dependency_diagram/before/DependencyDiagramWebV1.htm">
+
+			</section>
+
 			<section id="current-exposures-title">
 				<h2>Current Exposures</h2>
 
 				<br>
-				<a href="#" class="navigate-down">
-					<img width="46" height="75" data-src="img/arrow.png" alt="Down arrow">
-				</a>
 
 				<aside class="notes">
 
 				</aside>
 			</section>
 
-			<section id="current-exposures-physical">
+			<section id="current-exposures-physical" data-has-chart="true" data-canvas-id="current-exposures-physical-matrix"
+					 data-set-name="data/exposures/before/physical.json" data-background-color="white">
 				<h2>Physical Environment</h2>
 
+				<canvas id="current-exposures-physical-matrix"></canvas>
+
 			</section>
 
-			<section id="current-exposures-network">
+			<section id="current-exposures-infrastructure" data-has-chart="true" data-canvas-id="current-exposures-infrastructure-matrix"
+					 data-set-name="data/exposures/before/infrastructure.json" data-background-color="white">
 				<h2>Network</h2>
 
+				<canvas id="current-exposures-infrastructure-matrix"></canvas>
+
 			</section>
 
-			<section id="current-exposures-hardware">
+			<section id="current-exposures-hardware" data-has-chart="true" data-canvas-id="current-exposures-hardware-matrix"
+					 data-set-name="data/exposures/before/hardware.json" data-background-color="white">
 				<h2>Hardware</h2>
+
+				<canvas id="current-exposures-hardware-matrix"></canvas>
 
 			</section>
 
@@ -300,7 +309,7 @@
 			</section>
 
 			<section id="current-exposures-application" data-has-chart="true" data-canvas-id="current-exposures-application-matrix"
-					 data-set-name="currentExposuresApplication" data-background-color="white">
+					 data-set-name="data/exposures/before/application.json" data-background-color="white">
 				<h2>Application/Middleware</h2>
 
 				<canvas id="current-exposures-application-matrix"></canvas>
@@ -318,14 +327,10 @@
 			</section>
 
 			<section id="current-exposures-ranking" data-has-chart="true" data-canvas-id="current-exposures-matrix"
-					 data-set-name="currentExposuresOverall" data-background-color="white">
+					 data-set-name="data/exposures/before/overall.json" data-background-color="white">
 				<h4>Ranking Exposures</h4>
 
 				<canvas id="current-exposures-matrix"></canvas>
-
-				<a href="#/current-exposures-title">
-					<img width="46" height="75" data-src="img/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-				</a>
 			</section>
 		</section>
 
@@ -415,10 +420,11 @@
 
     // More info https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+        controls: true, // Display presentation control arrows
+        progress: true, // Display a presentation progress bar
+        history: true, // Push each slide change to the browser history
+        center: true, // Vertical centering of slides
+        slideNumber: true, // Display the page number of the current slide
 
         transition: 'slide', // none/fade/slide/convex/concave/zoom
 

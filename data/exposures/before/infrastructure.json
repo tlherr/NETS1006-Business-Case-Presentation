@@ -1,0 +1,21 @@
+{
+  "datasets":
+  [
+    {
+      "label": "Router One Failure",
+      "backgroundColor": "#160f29",
+      "data": [{
+        "x": 5,
+        "y": 3
+      }]
+    },
+    {
+      "label": "SAN Failure",
+      "backgroundColor": "#246a73",
+      "data": [{
+        "x": 5,
+        "y": 2.5
+      }]
+    }
+  ]
+}
