@@ -106,7 +106,7 @@
                         yAxes: [{
                             scaleLabel: {
                                 display: true,
-                                labelString: 'Likelihood',
+                                labelString: 'Probability',
                                 fontSize: 20,
                                 fontStyle: 'bold'
                             },
