@@ -1,0 +1,37 @@
+{
+  "datasets":
+  [
+    {
+      "label": "Power Failure",
+      "backgroundColor": "#995d81",
+      "data": [{
+        "x": 2,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Loss of Primary Facility",
+      "backgroundColor": "#eb8258",
+      "data": [{
+        "x": 5,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Physical Intrusion",
+      "backgroundColor": "#f6f740",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Fire",
+      "backgroundColor": "#d8dc6a",
+      "data": [{
+        "x": 5,
+        "y": 2
+      }]
+    }
+  ]
+}

@@ -50,7 +50,7 @@
 
     reveal.addEventListener( 'slidechanged', function( event ) {
         if(event.currentSlide.dataset.hasChart==="true") {
-            setTimeout(buildChart(event.currentSlide.dataset.canvasId, event.currentSlide.dataset.setName), 2000);
+            buildChart(event.currentSlide.dataset.canvasId, event.currentSlide.dataset.setName);
         }
     });
 

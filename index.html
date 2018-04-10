@@ -263,136 +263,309 @@
 		</section>
 
 
+		<!-- Current Scenario -->
 		<section>
 
-			<section id="current-dependency-diagram" data-background-iframe="dependency_diagram/before/DependencyDiagramWebV1.htm">
+			<section id="current-dependency-diagram" data-background-iframe="dependency_diagram/before/DependencyDiagramWebV1.htm" data-background-color="white">
 
 			</section>
 
 			<section id="current-exposures-title">
 				<h2>Current Exposures</h2>
-
-				<br>
-
-				<aside class="notes">
-
-				</aside>
 			</section>
 
 			<section id="current-exposures-physical" data-has-chart="true" data-canvas-id="current-exposures-physical-matrix"
 					 data-set-name="data/exposures/before/physical.json" data-background-color="white">
 				<h2>Physical Environment</h2>
 
-				<canvas id="current-exposures-physical-matrix"></canvas>
-
+				<canvas id="current-exposures-physical-matrix" width="960" height="480"></canvas>
 			</section>
 
 			<section id="current-exposures-infrastructure" data-has-chart="true" data-canvas-id="current-exposures-infrastructure-matrix"
 					 data-set-name="data/exposures/before/infrastructure.json" data-background-color="white">
-				<h2>Network</h2>
+				<h2>Infrastructure</h2>
 
-				<canvas id="current-exposures-infrastructure-matrix"></canvas>
-
+				<canvas id="current-exposures-infrastructure-matrix" width="960" height="480"></canvas>
 			</section>
 
 			<section id="current-exposures-hardware" data-has-chart="true" data-canvas-id="current-exposures-hardware-matrix"
 					 data-set-name="data/exposures/before/hardware.json" data-background-color="white">
 				<h2>Hardware</h2>
 
-				<canvas id="current-exposures-hardware-matrix"></canvas>
-
+				<canvas id="current-exposures-hardware-matrix" width="960" height="480"></canvas>
 			</section>
 
-			<section id="current-exposures-os">
+			<section id="current-exposures-os" data-has-chart="true" data-canvas-id="current-exposures-os-matrix"
+					 data-set-name="data/exposures/before/os.json" data-background-color="white">
 				<h2>OS/Middleware</h2>
 
+				<canvas id="current-exposures-os-matrix" width="960" height="480"></canvas>
 			</section>
 
 			<section id="current-exposures-application" data-has-chart="true" data-canvas-id="current-exposures-application-matrix"
 					 data-set-name="data/exposures/before/application.json" data-background-color="white">
 				<h2>Application/Middleware</h2>
 
-				<canvas id="current-exposures-application-matrix"></canvas>
-
+				<canvas id="current-exposures-application-matrix" width="960" height="480"></canvas>
 			</section>
 
-			<section id="current-exposures-user-env">
+			<section id="current-exposures-user-env" data-has-chart="true" data-canvas-id="current-exposures-user-matrix"
+					 data-set-name="data/exposures/before/user.json" data-background-color="white">
 				<h2>User/Admin Env</h2>
 
+				<canvas id="current-exposures-user-matrix" width="960" height="480"></canvas>
 			</section>
 
 			<section id="current-exposures-out-of-scope">
 				<h2>Out of Scope</h2>
 
+				<p>Terrorist Attack, ????</p>
 			</section>
 
 			<section id="current-exposures-ranking" data-has-chart="true" data-canvas-id="current-exposures-matrix"
 					 data-set-name="data/exposures/before/overall.json" data-background-color="white">
 				<h4>Ranking Exposures</h4>
 
-				<canvas id="current-exposures-matrix"></canvas>
+				<canvas id="current-exposures-matrix" width="960" height="480"></canvas>
 			</section>
 		</section>
+		<!-- /Current Scenario -->
 
+		<!-- Improvements -->
 		<section>
 			<section id="mitigation-exposures-title">
-				<h2>Improvements</h2>
-
-				<br>
-				<a href="#" class="navigate-down">
-					<img width="46" height="75" data-src="img/arrow.png" alt="Down arrow">
-				</a>
+				<h2>Mitigation</h2>
 
 				<aside class="notes">
 
 				</aside>
 			</section>
 
-			<section id="mitigation-exposures-physical">
+			<section id="mitigation-exposures-physical-desc">
 				<h2>Physical Environment</h2>
 
+				<table>
+					<thead>
+						<tr>
+							<th>Risk</th>
+							<th>Mitigation</th>
+							<th>Cost</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Power Failure</td>
+							<td>Backup Generator</td>
+							<td>$20,000</td>
+						</tr>
+						<tr>
+							<td>Loss of Primary Site</td>
+							<td>Cold Cloud Backup</td>
+							<td>?????</td>
+						</tr>
+						<tr>
+							<td>Physical Intrusion</td>
+							<td>Door locks, security camera, motion sensors</td>
+							<td>?????</td>
+						</tr>
+					</tbody>
+				</table>
+
 			</section>
 
-			<section id="mitigation-exposures-network">
-				<h2>Network</h2>
+			<section id="mitigation-exposures-physical" data-has-chart="true" data-canvas-id="mitigation-exposures-physical-matrix"
+					 data-set-name="data/exposures/after/physical.json" data-background-color="white">
+				<h2>Physical Environment</h2>
+
+				<canvas id="mitigation-exposures-physical-matrix" width="960" height="480"></canvas>
 
 			</section>
 
-			<section id="mitigation-exposures-hardware">
+
+			<section id="mitigation-exposures-infrastructure-desc">
+				<h2>Infrastructure</h2>
+
+				<table>
+					<thead>
+					<tr>
+						<th>Risk</th>
+						<th>Mitigation</th>
+						<th>Cost</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Router One Failure</td>
+						<td>Second Router, VRRP/HSRP</td>
+						<td>$20,125.00</td>
+					</tr>
+					<tr>
+						<td>SAN Connection Failure</td>
+						<td>Cisco Catalyst 4928</td>
+						<td>$27,200.00</td>
+					</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="mitigation-exposures-infrastructure" data-has-chart="true" data-canvas-id="mitigation-exposures-infrastructure-matrix"
+					 data-set-name="data/exposures/after/infrastructure.json" data-background-color="white">
+				<h2>Infrastructure</h2>
+
+				<canvas id="mitigation-exposures-infrastructure-matrix" width="960" height="480"></canvas>
+
+			</section>
+
+
+
+			<section id="mitigation-exposures-hardware-desc">
 				<h2>Hardware</h2>
 
+				<table>
+					<thead>
+					<tr>
+						<th>Risk</th>
+						<th>Mitigation</th>
+						<th>Cost</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Server Failure</td>
+						<td>2 Spares</td>
+						<td>$8000.00</td>
+					</tr>
+					<tr>
+						<td>SAN Disk Failure</td>
+						<td>Cisco Catalyst 4928</td>
+						<td>$27,200.00</td>
+					</tr>
+					</tbody>
+				</table>
 			</section>
 
-			<section id="mitigation-exposures-os">
+			<section id="mitigation-exposures-hardware" data-has-chart="true" data-canvas-id="mitigation-exposures-hardware-matrix"
+					 data-set-name="data/exposures/after/hardware.json" data-background-color="white">
+				<h2>Hardware</h2>
+
+				<canvas id="mitigation-exposures-hardware-matrix" width="960" height="480"></canvas>
+
+			</section>
+
+			<section id="mitigation-exposures-os-desc">
 				<h2>OS/Middleware</h2>
 
+
+				<table>
+					<thead>
+					<tr>
+						<th>Risk</th>
+						<th>Mitigation</th>
+						<th>Cost</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>????</td>
+						<td>????</td>
+						<td>????</td>
+					</tr>
+					</tbody>
+				</table>
 			</section>
 
-			<section id="mitigation-exposures-application">
+			<section id="mitigation-exposures-os" data-has-chart="true" data-canvas-id="mitigation-exposures-os-matrix"
+					 data-set-name="data/exposures/after/os.json" data-background-color="white">
+				<h2>OS/Middleware</h2>
+
+				<canvas id="mitigation-exposures-os-matrix" width="960" height="480"></canvas>
+			</section>
+
+
+
+			<section id="mitigation-exposures-application-desc">
 				<h2>Application/Middleware</h2>
 
+				<table>
+					<thead>
+					<tr>
+						<th>Risk</th>
+						<th>Mitigation</th>
+						<th>Cost</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>App Instance Failure</td>
+						<td>Containerization</td>
+						<td>????</td>
+					</tr>
+					<tr>
+						<td>Bad Deployment</td>
+						<td>Kubernetes</td>
+						<td>????</td>
+					</tr>
+					<tr>
+						<td>Loss of Monitoring</td>
+						<td>Logging Server Redundancy</td>
+						<td>????</td>
+					</tr>
+					<tr>
+						<td>Hung JVM/GC Pause</td>
+						<td>Containerization</td>
+						<td>????</td>
+					</tr>
+					</tbody>
+				</table>
+
+				<aside class="notes">
+					Saying App is Stateless
+					Is packaged JAR
+					Tomcat available as docker container
+				</aside>
 			</section>
 
-			<section id="mitigation-exposures-user-env">
+			<section id="mitigation-exposures-application" data-has-chart="true" data-canvas-id="mitigation-exposures-application-matrix"
+					 data-set-name="data/exposures/after/application.json" data-background-color="white">
+				<h2>Application/Middleware</h2>
+
+				<canvas id="mitigation-exposures-application-matrix" width="960" height="480"></canvas>
+			</section>
+
+
+			<section id="mitigation-exposures-user-env-desc">
 				<h2>User/Admin Env</h2>
 
+				<table>
+					<thead>
+					<tr>
+						<th>Risk</th>
+						<th>Mitigation</th>
+						<th>Cost</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>????</td>
+						<td>????</td>
+						<td>????</td>
+					</tr>
+					</tbody>
+				</table>
+
 			</section>
 
-			<section id="mitigation-exposures-ranking" data-has-chart="true" data-background-color="white">
-				<h4>Mitigation Effects</h4>
+			<section id="mitigation-exposures-user-env" data-has-chart="true" data-canvas-id="mitigation-exposures-user-matrix"
+					 data-set-name="data/exposures/after/user.json" data-background-color="white">
+				<h2>User/Admin Env</h2>
 
-				<canvas id="mitigation-exposures"></canvas>
-
+				<canvas id="mitigation-exposures-user-matrix" width="960" height="480"></canvas>
 			</section>
 
-			<section id="mitigation-exposures-costing" data-has-chart="true" data-background-color="white">
-				<h4>Cost vs Exposure Reduction</h4>
+			<section id="mitigation-exposures-costing" data-background-color="white">
+				<h2>Cost vs Exposure Reduction</h2>
 
 				<canvas id="mitigation-exposures-cost"></canvas>
-
-				<a href="#/mitigation-exposures-title">
-					<img width="46" height="75" data-src="img/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-				</a>
 			</section>
 		</section>
 

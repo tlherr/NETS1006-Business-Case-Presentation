@@ -3,7 +3,7 @@
   [
     {
       "label": "Risk 1",
-      "backgroundColor": "#17183b",
+      "backgroundColor": "#957964",
       "pointRadius": 20,
       "data": [{
         "x": 4,
@@ -12,7 +12,7 @@
     },
     {
       "label": "Risk 2",
-      "backgroundColor": "#a11692",
+      "backgroundColor": "#512500",
       "pointRadius": 20,
       "data": [{
         "x": 3,

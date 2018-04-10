@@ -1,0 +1,21 @@
+{
+  "datasets":
+  [
+    {
+      "label": "Server Failure",
+      "backgroundColor": "#379634",
+      "data": [{
+        "x": 2,
+        "y": 3
+      }]
+    },
+    {
+      "label": "SAN Failure",
+      "backgroundColor": "#0a3200",
+      "data": [{
+        "x": 2,
+        "y": 2.5
+      }]
+    }
+  ]
+}

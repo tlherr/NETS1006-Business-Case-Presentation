@@ -6,8 +6,8 @@
       "backgroundColor": "#17183b",
       "pointRadius": 20,
       "data": [{
-        "x": 4,
-        "y": 5
+        "x": 2,
+        "y": 3
       }]
     },
     {
@@ -15,8 +15,8 @@
       "backgroundColor": "#a11692",
       "pointRadius": 20,
       "data": [{
-        "x": 3,
-        "y": 4
+        "x": 1,
+        "y": 2
       }]
     }
   ]
