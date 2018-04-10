@@ -461,7 +461,7 @@
 			<section id="mitigation-exposures-physical-desc">
 				<h2>Physical Environment</h2>
 
-				<table class="text-size-md">
+				<table class="text-size-sm">
 					<thead>
 						<tr>
 							<th>Risk</th>
@@ -499,7 +499,7 @@
 							<td>Financial (Damaged Hardware)</td>
 							<td>Inergen Extinguishing System</td>
 							<td class="highlight-red">Total Hardware Value in Data Hall (~$100,000)</td>
-							<td>$150,000</td>
+							<td class="highlight-red">$150,000+</td>
 						</tr>
                         <tr>
                             <td>Cooling System Failure</td>
@@ -542,12 +542,16 @@
 					<tbody>
 					<tr>
 						<td>Router One Failure</td>
+						<td>Reputational, Legal/Financial (SLA)</td>
 						<td>Second Router, VRRP/HSRP</td>
+						<td>$500/hour + SLA penalties + lost business</td>
 						<td>$20,125.00</td>
 					</tr>
 					<tr>
 						<td>SAN Connection Failure</td>
+						<td>Reputational, Legal/Financial (SLA)</td>
 						<td>Cisco Catalyst 4928</td>
+						<td>$500/hour + SLA penalties + lost business</td>
 						<td>$27,200.00</td>
 					</tr>
 					</tbody>
@@ -577,12 +581,16 @@
 					<tbody>
 					<tr>
 						<td>Server Failure</td>
+						<td>Quality of Service</td>
 						<td>2 Spares + Virtualization</td>
+						<td>Lost Business</td>
 						<td>$8000.00</td>
 					</tr>
 					<tr>
 						<td>SAN Failure</td>
+						<td>Reputational, Legal, Moral</td>
 						<td>Failover SAN</td>
+						<td>Lost Business + SLA Legal</td>
 						<td>$27,200.00</td>
 					</tr>
 					</tbody>
@@ -599,7 +607,7 @@
 			<section id="mitigation-exposures-os-desc">
 				<h2>OS/Middleware</h2>
 
-				<table class="text-size-md">
+				<table class="text-size-sm">
 					<thead>
 					<tr>
 						<th>Risk</th>
@@ -612,27 +620,37 @@
 					<tbody>
 					<tr>
 						<td>Driver Problems</td>
+						<td>Quality of Service</td>
 						<td>Create Testing Environment and Use</td>
+						<td>????</td>
 						<td>????</td>
 					</tr>
 					<tr>
 						<td>Data Loss</td>
-						<td>Remote Cloud Backup, Local Incremental if Possible</td>
-						<td></td>
+						<td>Reputational, Legal, Financial, Moral</td>
+						<td>Local mirrored SAN, remote backup, keeping undo/redo logs</td>
+						<td>????</td>
+						<td>????</td>
 					</tr>
 					<tr>
 						<td>Bad Updates</td>
+						<td>Reputational</td>
 						<td>Test Updates and use policy to determine roll out schedule</td>
+						<td>????</td>
 						<td>????</td>
 					</tr>
 					<tr>
 						<td>Performance Problems</td>
+						<td>Reputational</td>
 						<td>Gathering Performance Metrics, Hardware Lifecycle, Demming Play</td>
+						<td>????</td>
 						<td>????</td>
 					</tr>
 					<tr>
 						<td>Log File Full</td>
+						<td>Operational, Legal</td>
 						<td>Log Monitoring Application, Automated Rotation, Archive Server to remote</td>
+						<td>????</td>
 						<td>????</td>
 					</tr>
 
@@ -650,7 +668,7 @@
 			<section id="mitigation-exposures-application-desc">
 				<h2>Application/Middleware</h2>
 
-				<table class="text-size-md">
+				<table class="text-size-sm">
 					<thead>
 					<tr>
 						<th>Risk</th>
