@@ -2,21 +2,48 @@
   "datasets":
   [
     {
-      "label": "Risk 1",
-      "backgroundColor": "#2e5077",
+      "label": "Driver Problems",
+      "backgroundColor": "#bfc0c0",
       "pointRadius": 20,
       "data": [{
         "x": 4,
+        "y": 4
+      }]
+    },
+    {
+      "label": "Data Loss",
+      "backgroundColor": "#4f5d75",
+      "pointRadius": 20,
+      "data": [{
+        "x": 5,
         "y": 5
       }]
     },
     {
-      "label": "Risk 2",
-      "backgroundColor": "#4da1a9",
+      "label": "Bad Updates",
+      "backgroundColor": "#2d3142",
       "pointRadius": 20,
       "data": [{
-        "x": 3,
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Performance Problems",
+      "backgroundColor": "#4f5d75",
+      "pointRadius": 20,
+      "data": [{
+        "x": 5,
         "y": 4
+      }]
+    },
+    {
+      "label": "Log File Full",
+      "backgroundColor": "#47682c",
+      "pointRadius": 20,
+      "data": [{
+        "x": 4,
+        "y": 3
       }]
     }
   ]

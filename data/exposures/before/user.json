@@ -2,21 +2,19 @@
   "datasets":
   [
     {
-      "label": "Risk 1",
-      "backgroundColor": "#957964",
-      "pointRadius": 20,
+      "label": "Human Error",
+      "backgroundColor": "#190e4f",
       "data": [{
-        "x": 4,
-        "y": 5
+        "x": 5,
+        "y": 3
       }]
     },
     {
-      "label": "Risk 2",
-      "backgroundColor": "#512500",
-      "pointRadius": 20,
+      "label": "Unique Knowledge",
+      "backgroundColor": "#03012c",
       "data": [{
-        "x": 3,
-        "y": 4
+        "x": 4,
+        "y": 2
       }]
     }
   ]
