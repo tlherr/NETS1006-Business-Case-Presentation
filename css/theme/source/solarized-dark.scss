@@ -24,6 +24,18 @@ html * {
 	rendering-intent: auto;
 }
 
+ul.col-2 {
+	list-style-type: disc;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	columns: 2;
+	list-style-position: inside;//this is important addition
+
+	li {
+		font-size: 0.75em;
+	}
+}
+
 // Solarized colors
 $base03:    #002b36;
 $base02:    #073642;
