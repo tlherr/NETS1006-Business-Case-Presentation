@@ -26,8 +26,8 @@
                         //The further top we are, the more red we want
 
                         //Need to start at 100 and end at 255 in pixel steps
-                        var red = (255 - (pixels) * i);
-                        var green = (255 - (pixels) * j);
+                        var red = (140 + (pixels) * i);
+                        var green = (225 - (pixels) * j);
 
                         ctx.fillStyle = 'rgb(' + red + ', ' + green + ', 0)';
 
@@ -106,7 +106,9 @@
                         yAxes: [{
                             scaleLabel: {
                                 display: true,
-                                labelString: 'Likelihood'
+                                labelString: 'Likelihood',
+                                fontSize: 20,
+                                fontStyle: 'bold'
                             },
                             ticks: {
                                 min: 0,
@@ -117,7 +119,9 @@
                         xAxes: [{
                             scaleLabel: {
                                 display: true,
-                                labelString: 'Impact'
+                                labelString: 'Impact',
+                                fontSize: 20,
+                                fontStyle: 'bold'
                             },
                             ticks: {
                                 min: 0,
