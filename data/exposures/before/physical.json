@@ -32,6 +32,22 @@
         "x": 5,
         "y": 2
       }]
+    },
+    {
+      "label": "Flood",
+      "backgroundColor": "#f6f740",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Pandemic",
+      "backgroundColor": "#f6f740",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
     }
   ]
 }

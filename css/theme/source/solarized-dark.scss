@@ -69,6 +69,10 @@ $linkColor: $cyan;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $cyan;
 
+.highlight-red {
+	color: $red!important;
+}
+
 // Background generator
 // @mixin bodyBackground() {
 // 	@include radial-gradient( rgba($base3,1), rgba(lighten($base3, 20%),1) );

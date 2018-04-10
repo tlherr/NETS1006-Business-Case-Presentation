@@ -98,6 +98,7 @@
 				<p>Startup entered market 5 yrs ago</p>
 				<p>Attracted customers with competitive pricing and attractive features</p>
 				<p>Business requirements changing with increasing customer base and desire to expand enterprise clients</p>
+                <p>Located in Barrie, ON</p>
 
 				<br>
 				<a href="#" class="navigate-down">
@@ -139,10 +140,46 @@
 				<li>RPO: 0</li>
 				<li>Uninterrupted access during <b>operational hours</b></li>
 				<li>Data security (Sensitive Data)</li>
-				<li>Availability of Support (Response Times)</li>
+				<li>Availability of Support (Response Times - Tiered)</li>
 				<li>Self host or hosted</li>
 			</ul>
 		</section>
+
+        <section id="customers-expectations-response-times">
+            <h2>Customer Response Times</h2>
+            <!-- @Ref: https://www.jitbit.com/helpdesk/sla/ -->
+            <table class="text-size-md">
+                <thead>
+                <tr>
+                    <th>Priority</th>
+                    <th>Respond</th>
+                    <th>Resolve</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Critical</td>
+                    <td>1 hr</td>
+                    <td>5 hr</td>
+                </tr>
+                <tr>
+                    <td>High</td>
+                    <td>2 hr</td>
+                    <td>7 hr</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>4 hr</td>
+                    <td>12 hr</td>
+                </tr>
+                <tr>
+                    <td>Low</td>
+                    <td>8 hr</td>
+                    <td>24 hr</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
 
 		<section id="business-expectations">
 			<h2>Business Expectations</h2>
@@ -154,6 +191,7 @@
 		</section>
 
 
+        <!-- Start with business requirements – focus on HA/BC/DR needs -->
 		<section id="business-requirements">
 			<h2>Business Requirements</h2>
 			<h4>Mission Critical Systems</h4>
@@ -400,7 +438,7 @@
 			<section id="current-exposures-out-of-scope">
 				<h2>Out of Scope</h2>
 
-				<p>Terrorist Attack, Earthquake (Geographic Area)</p>
+				<p>Terrorist Attack, War, Earthquake (Geographic Area)</p>
 			</section>
 
 			<section id="current-exposures-ranking" data-has-chart="true" data-canvas-id="current-exposures-matrix"
@@ -412,14 +450,12 @@
 		</section>
 		<!-- /Current Scenario -->
 
-		<!-- Improvements -->
+		<!-- Improvements: Use failover scenarios to help with HA/BC/DR design -->
+        <!-- Consider different types of failover – the type will be more important than the immediate cause
+             Use dependency diagrams to help with describing design and how it mitigates risk -->
 		<section>
 			<section id="mitigation-exposures-title">
 				<h2>Mitigation</h2>
-
-				<aside class="notes">
-
-				</aside>
 			</section>
 
 			<section id="mitigation-exposures-physical-desc">
@@ -429,29 +465,58 @@
 					<thead>
 						<tr>
 							<th>Risk</th>
+							<th>Risk Category</th>
 							<th>Mitigation</th>
-							<th>Cost</th>
+                            <th>Risk Cost</th>
+							<th>Mitigation Cost</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>Power Failure</td>
+							<td>Power Outage</td>
+                            <td>Reputational, Contractual/Financial</td>
 							<td>Backup Generator</td>
+                            <td>$500/h down + lost business</td>
 							<td>$20,000</td>
 						</tr>
 						<tr>
-							<td>Loss of Primary Site</td>
-							<td>Cold Cloud Backup</td>
-							<td>?????</td>
+							<td>Power Spikes</td>
+							<td>Damaged Hardware</td>
+							<td>UPS Coverage, Battery Testing</td>
+							<td>Hardware Cost. up to $25,000</td>
+							<td>????</td>
 						</tr>
 						<tr>
+							<td>Loss of Primary Site</td>
+                            <td>Reputational, Contractual/Financial</td>
+                            <td>Offsite (Cloud) Warm Site</td>
+                            <td>$500/h down + lost business</td>
+                            <td>?????</td>
+						</tr>
+						<!--  Transfer Risk Via Insurance -->
+						<tr>
+							<td>Fire</td>
+							<td>Financial (Damaged Hardware)</td>
+							<td>Inergen Extinguishing System</td>
+							<td class="highlight-red">Total Hardware Value in Data Hall (~$100,000)</td>
+							<td>$150,000</td>
+						</tr>
+                        <tr>
+                            <td>Cooling System Failure</td>
+                            <td>Financial (Damaged Hardware)</td>
+                            <td>Monitoring, Capacity Planning, Backup AC System</td>
+                            <td>Total Hardware Value in Data Hall</td>
+                            <td>?????</td>
+                        </tr>
+						<tr>
 							<td>Physical Intrusion</td>
-							<td>Door locks, security camera, motion sensors</td>
+                            <td>Reputational, Legal</td>
+                            <td>Door locks, security camera, motion sensors</td>
+                            <td>Fines + Civil</td>
 							<td>?????</td>
 						</tr>
 					</tbody>
 				</table>
-
 			</section>
 
 			<section id="mitigation-exposures-physical" data-has-chart="true" data-canvas-id="mitigation-exposures-physical-matrix"
@@ -459,9 +524,7 @@
 				<h2>Physical Environment</h2>
 
 				<canvas id="mitigation-exposures-physical-matrix" width="960" height="480"></canvas>
-
 			</section>
-
 
 			<section id="mitigation-exposures-infrastructure-desc">
 				<h2>Infrastructure</h2>
@@ -470,8 +533,10 @@
 					<thead>
 					<tr>
 						<th>Risk</th>
+						<th>Risk Category</th>
 						<th>Mitigation</th>
-						<th>Cost</th>
+						<th>Risk Cost</th>
+						<th>Mitigation Cost</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -494,10 +559,7 @@
 				<h2>Infrastructure</h2>
 
 				<canvas id="mitigation-exposures-infrastructure-matrix" width="960" height="480"></canvas>
-
 			</section>
-
-
 
 			<section id="mitigation-exposures-hardware-desc">
 				<h2>Hardware</h2>
@@ -506,8 +568,10 @@
 					<thead>
 					<tr>
 						<th>Risk</th>
+						<th>Risk Category</th>
 						<th>Mitigation</th>
-						<th>Cost</th>
+						<th>Risk Cost</th>
+						<th>Mitigation Cost</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -539,8 +603,10 @@
 					<thead>
 					<tr>
 						<th>Risk</th>
+						<th>Risk Category</th>
 						<th>Mitigation</th>
-						<th>Cost</th>
+						<th>Risk Cost</th>
+						<th>Mitigation Cost</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -588,8 +654,10 @@
 					<thead>
 					<tr>
 						<th>Risk</th>
+						<th>Risk Category</th>
 						<th>Mitigation</th>
-						<th>Cost</th>
+						<th>Risk Cost</th>
+						<th>Mitigation Cost</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -637,8 +705,10 @@
 					<thead>
 					<tr>
 						<th>Risk</th>
+						<th>Risk Category</th>
 						<th>Mitigation</th>
-						<th>Cost</th>
+						<th>Risk Cost</th>
+						<th>Mitigation Cost</th>
 					</tr>
 					</thead>
 					<tbody>
