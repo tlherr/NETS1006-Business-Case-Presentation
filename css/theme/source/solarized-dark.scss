@@ -30,11 +30,16 @@ ul.col-2 {
 	-moz-columns: 2;
 	columns: 2;
 	list-style-position: inside;//this is important addition
-
-	li {
-		font-size: 0.65em;
-	}
 }
+
+.text-size-md {
+	font-size: 0.65em;
+}
+
+.text-size-sm {
+	font-size: 0.50em;
+}
+
 
 // Solarized colors
 $base03:    #002b36;
