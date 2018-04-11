@@ -307,7 +307,22 @@
 				<h2>Current Exposures</h2>
 			</section>
 
-			<section id="current-dependency-diagram" data-background-iframe="dependency_diagram/before/DependencyDiagramWebV1.htm" data-background-color="white">
+			<section id="current-dependency-diagram" data-background-color="white">
+				<h2>Current Dependency Diagram</h2>
+
+				<embed id="dependency-diagram-before" type="image/svg+xml" style="width: 960px; height: 500px; border:1px solid black; " src="dependency_diagram/before.svg">
+
+				<script type="application/javascript">
+                    document.addEventListener("DOMContentLoaded", function(){
+                        svgPanZoom('#dependency-diagram-before', {
+                            zoomEnabled: true,
+                            controlIconsEnabled: true,
+                            fit: true,
+                            center: true,
+                            minZoom: 0.1
+                        });
+                    });
+				</script>
 
 			</section>
 
@@ -751,6 +766,27 @@
 
 				<canvas id="mitigation-exposures-cost"></canvas>
 			</section>
+
+
+			<section id="mitigation-dependency-diagram" data-background-color="white">
+				<h2>Current Dependency Diagram</h2>
+
+				<embed id="dependency-diagram-after" type="image/svg+xml" style="width: 960px; height: 500px; border:1px solid black; " src="dependency_diagram/after.svg">
+
+				<script type="application/javascript">
+                    document.addEventListener("DOMContentLoaded", function(){
+                        svgPanZoom('#dependency-diagram-after', {
+                            zoomEnabled: true,
+                            controlIconsEnabled: true,
+                            fit: true,
+                            center: true,
+                            minZoom: 0.1
+                        });
+                    });
+				</script>
+
+			</section>
+
 		</section>
 
 
@@ -771,6 +807,7 @@
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
 <script src="js/Chart.js"></script>
+<script src="lib/js/svg-pan-zoom.min.js"></script>
 <script src="js/Graphs.js"></script>
 
 <script>
