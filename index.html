@@ -318,7 +318,8 @@
 				<script type="application/javascript">
                     $(document).ready(function() {
                         Reveal.addEventListener( 'slidechanged', function( event ) {
-                            if(event.currentSlide.id==="dependency-diagram-before") {
+                            if(event.currentSlide.id==="current-dependency-diagram") {
+                                console.log("On Slide");
                                 svgPanZoom('#dependency-diagram-before', {
                                     zoomEnabled: true,
                                     panEnabled: true,
@@ -819,7 +820,7 @@
 				<script type="application/javascript">
                     $(document).ready(function() {
                         Reveal.addEventListener( 'slidechanged', function( event ) {
-                            if(event.currentSlide.id==="dependency-diagram-after") {
+                            if(event.currentSlide.id==="mitigation-dependency-diagram") {
                                 svgPanZoom('#dependency-diagram-after', {
                                     zoomEnabled: true,
                                     panEnabled: true,
