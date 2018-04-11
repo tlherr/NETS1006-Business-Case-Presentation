@@ -16,6 +16,14 @@
         "x": 2,
         "y": 2
       }]
+    },
+    {
+      "label": "Support Staff at Capacity",
+      "backgroundColor": "#03016b",
+      "data": [{
+        "x": 2,
+        "y": 4
+      }]
     }
   ]
 }
