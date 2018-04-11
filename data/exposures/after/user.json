@@ -10,7 +10,7 @@
       }]
     },
     {
-      "label": "Unique Knowledge",
+      "label": "S.P.O.K",
       "backgroundColor": "#e4dfda",
       "data": [{
         "x": 2,
@@ -35,7 +35,7 @@
       }]
     },
     {
-      "label": "Unique Knowledge (Before)",
+      "label": "S.P.O.K (Before)",
       "backgroundColor": "#e4dfda",
       "pointStyle": "rectRot",
       "data": [{
