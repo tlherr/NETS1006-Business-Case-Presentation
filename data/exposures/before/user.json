@@ -3,7 +3,7 @@
   [
     {
       "label": "Human Error",
-      "backgroundColor": "#190e4f",
+      "backgroundColor": "#d4b483",
       "data": [{
         "x": 5,
         "y": 3
@@ -11,7 +11,7 @@
     },
     {
       "label": "Unique Knowledge",
-      "backgroundColor": "#03012c",
+      "backgroundColor": "#e4dfda",
       "data": [{
         "x": 4,
         "y": 2
@@ -19,7 +19,7 @@
     },
     {
       "label": "Support Staff at Capacity",
-      "backgroundColor": "#03016b",
+      "backgroundColor": "#731dd8",
       "data": [{
         "x": 5,
         "y": 4

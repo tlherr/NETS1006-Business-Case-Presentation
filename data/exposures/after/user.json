@@ -3,7 +3,7 @@
   [
     {
       "label": "Human Error",
-      "backgroundColor": "#190e4f",
+      "backgroundColor": "#d4b483",
       "data": [{
         "x": 4,
         "y": 2
@@ -11,7 +11,7 @@
     },
     {
       "label": "Unique Knowledge",
-      "backgroundColor": "#03012c",
+      "backgroundColor": "#e4dfda",
       "data": [{
         "x": 2,
         "y": 2
@@ -19,15 +19,15 @@
     },
     {
       "label": "Support Staff at Capacity",
-      "backgroundColor": "#03016b",
+      "backgroundColor": "#731dd8",
       "data": [{
         "x": 2,
         "y": 4
       }]
     },
     {
-      "label": "Human Error",
-      "backgroundColor": "#190e4f",
+      "label": "Human Error (Before)",
+      "backgroundColor": "#d4b483",
       "pointStyle": "rectRot",
       "data": [{
         "x": 5,
@@ -35,8 +35,8 @@
       }]
     },
     {
-      "label": "Unique Knowledge",
-      "backgroundColor": "#03012c",
+      "label": "Unique Knowledge (Before)",
+      "backgroundColor": "#e4dfda",
       "pointStyle": "rectRot",
       "data": [{
         "x": 4,
@@ -44,8 +44,8 @@
       }]
     },
     {
-      "label": "Support Staff at Capacity",
-      "backgroundColor": "#03016b",
+      "label": "Support Staff at Capacity (Before)",
+      "backgroundColor": "#731dd8",
       "pointStyle": "rectRot",
       "data": [{
         "x": 5,
