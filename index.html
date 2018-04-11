@@ -131,7 +131,7 @@
 				<h2>Closest Analogous Business</h2>
 
 				<p>JitBit Help Desk</p>
-				<p>$1.7 M/yr revenue</p>
+				<p>"makes around $1.7 mil a year (revenue), about 65% of which is recurring subscriptions, and 35% comes from "on-premise" licenses." (Yumashev, 2017)</p>
 				<p>Private Company</p>
 				<p>Under 20 Employees</p>
 			</section>
@@ -317,13 +317,17 @@
 
 				<script type="application/javascript">
                     $(document).ready(function() {
-                        svgPanZoom('#dependency-diagram-before', {
-                            zoomEnabled: true,
-                            panEnabled: true,
-                            controlIconsEnabled: true,
-                            fit: true,
-                            center: true,
-                            minZoom: 0.1
+                        Reveal.addEventListener( 'slidechanged', function( event ) {
+                            if(event.currentSlide.id==="dependency-diagram-before") {
+                                svgPanZoom('#dependency-diagram-before', {
+                                    zoomEnabled: true,
+                                    panEnabled: true,
+                                    controlIconsEnabled: true,
+                                    fit: true,
+                                    center: true,
+                                    minZoom: 0.1
+                                });
+                            }
                         });
                     });
 				</script>
@@ -814,13 +818,17 @@
 
 				<script type="application/javascript">
                     $(document).ready(function() {
-                        svgPanZoom('#dependency-diagram-after', {
-                            zoomEnabled: true,
-							panEnabled: true,
-                            controlIconsEnabled: true,
-                            fit: true,
-                            center: true,
-                            minZoom: 0.1
+                        Reveal.addEventListener( 'slidechanged', function( event ) {
+                            if(event.currentSlide.id==="dependency-diagram-after") {
+                                svgPanZoom('#dependency-diagram-after', {
+                                    zoomEnabled: true,
+                                    panEnabled: true,
+                                    controlIconsEnabled: true,
+                                    fit: true,
+                                    center: true,
+                                    minZoom: 0.1
+                                });
+                            }
                         });
                     });
 				</script>
@@ -843,6 +851,7 @@
 				<li>www.ppi-int.com/training</li>
 				<li>http://www.dell.com/ae/business/p/powervault-md3820i/pd</li>
 				<li>https://www.electricgeneratorsdirect.com/power/25-kw-generators.html</li>
+				<li>https://www.indiehackers.com/interview/using-viral-tools-to-attract-customers-and-make-1-7m-year-291efb72ba</li>
 			</ul>
 
 		</section>
