@@ -491,10 +491,11 @@
 						</tr>
 					</thead>
 					<tbody>
+						<!-- https://www.schneider-electric.com/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-power-sizing-calculator/tool.html -->
 						<tr>
-							<td>Power Outage</td>
+							<td>Power Failure</td>
                             <td>Reputational, Contractual/Financial</td>
-							<td>Backup Generator</td>
+							<td>Backup Generator (25 kW)</td>
                             <td>$500/h down + lost business</td>
 							<td>$20,000</td>
 						</tr>
@@ -503,36 +504,36 @@
 							<td>Damaged Hardware</td>
 							<td>UPS Coverage, Battery Testing</td>
 							<td>Hardware Cost. up to $25,000</td>
-							<td>????</td>
+							<td>$500/UPS/~2yrs</td>
 						</tr>
 						<tr>
 							<td>Loss of Primary Site</td>
                             <td>Reputational, Contractual/Financial</td>
                             <td>Offsite (Cloud) Warm Site</td>
                             <td>$500/h down + lost business</td>
-                            <td>?????</td>
+                            <td>&lt;$500/Month</td>
 						</tr>
 						<!--  Transfer Risk Via Insurance -->
 						<tr>
 							<td>Fire</td>
 							<td>Financial (Damaged Hardware)</td>
 							<td>Inergen Extinguishing System</td>
-							<td class="highlight-red">Total Hardware Value in Data Hall (~$100,000)</td>
-							<td class="highlight-red">$150,000+</td>
+							<td><span class="highlight-red">Total Hardware Value (~$100,000) + Loss of Customers</span></td>
+							<td><span class="highlight-red">$150,000+</span></td>
 						</tr>
                         <tr>
                             <td>Cooling System Failure</td>
                             <td>Financial (Damaged Hardware)</td>
                             <td>Monitoring, Capacity Planning, Backup AC System</td>
-                            <td>Total Hardware Value in Data Hall</td>
-                            <td>?????</td>
+                            <td>Total Hardware Value (~$100,000) + Loss of Customers</td>
+                            <td>$10,000</td>
                         </tr>
 						<tr>
 							<td>Physical Intrusion</td>
                             <td>Reputational, Legal</td>
-                            <td>Door locks, security camera, motion sensors</td>
+                            <td>Door locks, security camera + storage, motion sensors</td>
                             <td>Fines + Civil</td>
-							<td>?????</td>
+							<td>$3000.00</td>
 						</tr>
 					</tbody>
 				</table>
@@ -572,6 +573,13 @@
 						<td>Cisco Catalyst 4928</td>
 						<td>$500/hour + SLA penalties + lost business</td>
 						<td>$27,200.00</td>
+					</tr>
+					<tr>
+						<td>Support Unreachable</td>
+						<td>Reputational, Legal/Financial (SLA)</td>
+						<td>Backup phones, cell phones</td>
+						<td>SLA penalties + lost business</td>
+						<td>$2400.00</td>
 					</tr>
 					</tbody>
 				</table>
@@ -698,25 +706,34 @@
 					</tr>
 					</thead>
 					<tbody>
+					<!-- Datadog Pricing: https://www.datadoghq.com/pricing/  -->
 					<tr>
 						<td>App Instance Failure</td>
-						<td>Containerization</td>
-						<td>????</td>
+						<td>Quality of Service</td>
+						<td>Virtualization, Horizontal Scaling, Automating Management</td>
+						<td>Loss of customers</td>
+						<td>$23/Host/Month</td>
 					</tr>
 					<tr>
 						<td>Bad Deployment</td>
-						<td>Kubernetes</td>
-						<td>????</td>
+						<td>Reputational, Financial/Legal (SLA)</td>
+						<td>Automation, Use Test Environment</td>
+						<td>$500/h down + lost business</td>
+						<td>FOSS/COTS - Staff Hrs</td>
 					</tr>
 					<tr>
 						<td>Loss of Monitoring</td>
+						<td>Financial/Legal (SLA)</td>
 						<td>Logging Server Redundancy</td>
-						<td>????</td>
+						<td>$500/h down + lost business</td>
+						<td>$3000.00</td>
 					</tr>
 					<tr>
 						<td>Hung JVM/GC Pause</td>
-						<td>Containerization</td>
-						<td>????</td>
+						<td>Quality of Service</td>
+						<td>Code Audit, QC, Stress Testing</td>
+						<td>Lost business</td>
+						<td>Soft - Staff Hrs</td>
 					</tr>
 					</tbody>
 				</table>
@@ -745,12 +762,16 @@
 					<tbody>
 					<tr>
 						<td>Human Error</td>
+						<td>Reputational, Financial, Legal</td>
 						<td>Training, 4 eye principle, policies/checklists</td>
+						<td>Wide Range</td>
 						<td>$15,900 + S</td>
 					</tr>
 					<tr>
 						<td>Unique Knowledge</td>
+						<td>Operational (Impact RTO)</td>
 						<td>KBS (Documentation)</td>
+						<td>Wide Range</td>
 						<td>$4,100</td>
 					</tr>
 					</tbody>

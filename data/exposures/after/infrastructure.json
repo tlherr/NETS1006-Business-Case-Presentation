@@ -16,6 +16,14 @@
         "x": 1,
         "y": 2.5
       }]
+    },
+    {
+      "label": "Support Unreachable",
+      "backgroundColor": "#246b65",
+      "data": [{
+        "x": 2,
+        "y": 1.5
+      }]
     }
   ]
 }

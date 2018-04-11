@@ -26,27 +26,27 @@
       }]
     },
     {
-      "label": "Fire",
+      "label": "Cooling System Failure",
       "backgroundColor": "#d8dc6a",
       "data": [{
         "x": 5,
-        "y": 2
+        "y": 2.5
       }]
     },
     {
-      "label": "Flood",
-      "backgroundColor": "#f6f740",
+      "label": "Power Spikes",
+      "backgroundColor": "#be97c6",
       "data": [{
         "x": 4,
         "y": 2
       }]
     },
     {
-      "label": "Pandemic",
-      "backgroundColor": "#f6f740",
+      "label": "Fire",
+      "backgroundColor": "#8661c1",
       "data": [{
-        "x": 4,
-        "y": 2
+        "x": 5,
+        "y": 1
       }]
     }
   ]

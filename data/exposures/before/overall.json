@@ -2,21 +2,192 @@
   "datasets":
   [
     {
-      "label": "Risk 1",
-      "backgroundColor": "#17183b",
+      "label": "Coding Error",
+      "backgroundColor": "#db995a",
+      "data": [{
+        "x": 3,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Bad Deployment",
+      "backgroundColor": "#654236",
+      "data": [{
+        "x": 3,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Loss of monitoring",
+      "backgroundColor": "#d6d4a0",
+      "data": [{
+        "x": 2,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Hung JVM",
+      "backgroundColor": "#da7635",
+      "data": [{
+        "x": 4,
+        "y": 3
+      }]
+    },
+    {
+      "label": "App Failure",
+      "backgroundColor": "#e24e1b",
+      "data": [{
+        "x": 2,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Resource Exhaustion",
+      "backgroundColor": "#ec8e6d",
+      "data": [{
+        "x": 4,
+        "y": 4
+      }]
+    },
+    {
+      "label": "Server Failure",
+      "backgroundColor": "#379634",
+      "data": [{
+        "x": 5,
+        "y": 3
+      }]
+    },
+    {
+      "label": "SAN Failure",
+      "backgroundColor": "#0a3200",
+      "data": [{
+        "x": 5,
+        "y": 4
+      }]
+    },
+    {
+      "label": "Router One Failure",
+      "backgroundColor": "#160f29",
+      "data": [{
+        "x": 5,
+        "y": 3
+      }]
+    },
+    {
+      "label": "SAN Failure",
+      "backgroundColor": "#246a73",
+      "data": [{
+        "x": 5,
+        "y": 2.5
+      }]
+    },
+    {
+      "label": "Driver Problems",
+      "backgroundColor": "#bfc0c0",
       "pointRadius": 20,
       "data": [{
         "x": 4,
+        "y": 4
+      }]
+    },
+    {
+      "label": "Data Loss",
+      "backgroundColor": "#4f5d75",
+      "pointRadius": 20,
+      "data": [{
+        "x": 5,
         "y": 5
       }]
     },
     {
-      "label": "Risk 2",
-      "backgroundColor": "#a11692",
+      "label": "Bad Updates",
+      "backgroundColor": "#2d3142",
       "pointRadius": 20,
       "data": [{
-        "x": 3,
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Performance Problems",
+      "backgroundColor": "#4f5d75",
+      "pointRadius": 20,
+      "data": [{
+        "x": 5,
         "y": 4
+      }]
+    },
+    {
+      "label": "Log File Full",
+      "backgroundColor": "#47682c",
+      "pointRadius": 20,
+      "data": [{
+        "x": 4,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Power Failure",
+      "backgroundColor": "#995d81",
+      "data": [{
+        "x": 5,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Loss of Primary Facility",
+      "backgroundColor": "#eb8258",
+      "data": [{
+        "x": 5,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Physical Intrusion",
+      "backgroundColor": "#f6f740",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Fire",
+      "backgroundColor": "#d8dc6a",
+      "data": [{
+        "x": 5,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Flood",
+      "backgroundColor": "#be97c6",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Pandemic",
+      "backgroundColor": "#8661c1",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Human Error",
+      "backgroundColor": "#190e4f",
+      "data": [{
+        "x": 5,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Unique Knowledge",
+      "backgroundColor": "#03012c",
+      "data": [{
+        "x": 4,
+        "y": 2
       }]
     }
   ]

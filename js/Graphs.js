@@ -96,7 +96,7 @@
             }
 
 
-            chart = Chart.Scatter(ctx, {
+            var chart = Chart.Scatter(ctx, {
                 data: dataSet,
                 options: {
                     legend: {
@@ -143,6 +143,7 @@
                     }
                 }
             });
+
         });
 
 
