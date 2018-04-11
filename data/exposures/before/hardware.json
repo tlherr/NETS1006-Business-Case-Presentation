@@ -16,6 +16,14 @@
         "x": 5,
         "y": 4
       }]
+    },
+    {
+      "label": "Workstation Failure",
+      "backgroundColor": "#0a3200",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
     }
   ]
 }

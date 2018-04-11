@@ -13,7 +13,7 @@
       "label": "Loss of Primary Facility",
       "backgroundColor": "#eb8258",
       "data": [{
-        "x": 5,
+        "x": 3,
         "y": 2
       }]
     },
@@ -22,22 +22,22 @@
       "backgroundColor": "#f6f740",
       "data": [{
         "x": 4,
-        "y": 2
+        "y": 1
       }]
     },
     {
       "label": "Cooling System Failure",
       "backgroundColor": "#d8dc6a",
       "data": [{
-        "x": 5,
-        "y": 2
+        "x": 1,
+        "y": 2.5
       }]
     },
     {
       "label": "Power Spikes",
       "backgroundColor": "#be97c6",
       "data": [{
-        "x": 4,
+        "x": 1.5,
         "y": 2
       }]
     },
@@ -45,8 +45,62 @@
       "label": "Fire",
       "backgroundColor": "#8661c1",
       "data": [{
+        "x": 2.5,
+        "y": 1
+      }]
+    },
+    {
+      "label": "Power Failure (Before)",
+      "backgroundColor": "#995d81",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Loss of Primary Facility (Before)",
+      "backgroundColor": "#eb8258",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Physical Intrusion (Before)",
+      "backgroundColor": "#f6f740",
+      "pointStyle": "rectRot",
+      "data": [{
         "x": 4,
         "y": 2
+      }]
+    },
+    {
+      "label": "Cooling System Failure (Before)",
+      "backgroundColor": "#d8dc6a",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 2.5
+      }]
+    },
+    {
+      "label": "Power Spikes (Before)",
+      "backgroundColor": "#be97c6",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Fire (Before)",
+      "backgroundColor": "#8661c1",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 1
       }]
     }
   ]

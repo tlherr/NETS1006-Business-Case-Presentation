@@ -24,6 +24,33 @@
         "x": 2,
         "y": 4
       }]
+    },
+    {
+      "label": "Human Error",
+      "backgroundColor": "#190e4f",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Unique Knowledge",
+      "backgroundColor": "#03012c",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Support Staff at Capacity",
+      "backgroundColor": "#03016b",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 4
+      }]
     }
   ]
 }

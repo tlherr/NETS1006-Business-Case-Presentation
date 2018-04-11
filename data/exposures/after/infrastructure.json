@@ -24,6 +24,33 @@
         "x": 2,
         "y": 1.5
       }]
+    },
+    {
+      "label": "Router One Failure (Before)",
+      "backgroundColor": "#160f29",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 3
+      }]
+    },
+    {
+      "label": "SAN Failure (Before)",
+      "backgroundColor": "#246a73",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 2.5
+      }]
+    },
+    {
+      "label": "Support Unreachable (Before)",
+      "backgroundColor": "#246b65",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 1.5
+      }]
     }
   ]
 }

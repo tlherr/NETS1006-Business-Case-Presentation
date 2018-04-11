@@ -16,6 +16,41 @@
         "x": 2,
         "y": 2.5
       }]
+    },
+    {
+      "label": "Workstation Failure",
+      "backgroundColor": "#0a3200",
+      "data": [{
+        "x": 1,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Server Failure (Before)",
+      "backgroundColor": "#379634",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 3
+      }]
+    },
+    {
+      "label": "SAN Failure (Before)",
+      "backgroundColor": "#0a3200",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 5,
+        "y": 4
+      }]
+    },
+    {
+      "label": "Workstation Failure (Before)",
+      "backgroundColor": "#0a3200",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
     }
   ]
 }

@@ -48,6 +48,60 @@
         "x": 5,
         "y": 4
       }]
+    },
+    {
+      "label": "Coding Error (Before)",
+      "backgroundColor": "#db995a",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 3,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Bad Deployment (Before)",
+      "backgroundColor": "#654236",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 3,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Loss of monitoring (Before)",
+      "backgroundColor": "#d6d4a0",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 2,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Hung JVM (Before)",
+      "backgroundColor": "#da7635",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 4,
+        "y": 3
+      }]
+    },
+    {
+      "label": "App Failure (Before)",
+      "backgroundColor": "#e24e1b",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 2,
+        "y": 3
+      }]
+    },
+    {
+      "label": "Resource Exhaustion (Before)",
+      "backgroundColor": "#ec8e6d",
+      "pointStyle": "rectRot",
+      "data": [{
+        "x": 4,
+        "y": 4
+      }]
     }
   ]
 }

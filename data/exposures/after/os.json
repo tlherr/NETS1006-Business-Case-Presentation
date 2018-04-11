@@ -45,6 +45,56 @@
         "x": 3,
         "y": 2
       }]
+    },
+    {
+      "label": "Driver Problems (Before)",
+      "backgroundColor": "#bfc0c0",
+      "pointStyle": "rectRot",
+      "pointRadius": 20,
+      "data": [{
+        "x": 4,
+        "y": 4
+      }]
+    },
+    {
+      "label": "Data Loss (Before)",
+      "backgroundColor": "#4f5d75",
+      "pointStyle": "rectRot",
+      "pointRadius": 20,
+      "data": [{
+        "x": 5,
+        "y": 5
+      }]
+    },
+    {
+      "label": "Bad Updates (Before)",
+      "backgroundColor": "#2d3142",
+      "pointStyle": "rectRot",
+      "pointRadius": 20,
+      "data": [{
+        "x": 4,
+        "y": 2
+      }]
+    },
+    {
+      "label": "Performance Problems (Before)",
+      "backgroundColor": "#4f5d75",
+      "pointStyle": "rectRot",
+      "pointRadius": 20,
+      "data": [{
+        "x": 5,
+        "y": 4
+      }]
+    },
+    {
+      "label": "Log File Full (Before)",
+      "backgroundColor": "#47682c",
+      "pointStyle": "rectRot",
+      "pointRadius": 20,
+      "data": [{
+        "x": 4,
+        "y": 3
+      }]
     }
   ]
 }
