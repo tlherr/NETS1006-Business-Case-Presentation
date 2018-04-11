@@ -32,22 +32,6 @@
         "x": 4,
         "y": 3
       }]
-    },
-    {
-      "label": "App Failure",
-      "backgroundColor": "#e24e1b",
-      "data": [{
-        "x": 2,
-        "y": 3
-      }]
-    },
-    {
-      "label": "Resource Exhaustion",
-      "backgroundColor": "#ec8e6d",
-      "data": [{
-        "x": 4,
-        "y": 4
-      }]
     }
   ]
 }
