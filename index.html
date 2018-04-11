@@ -20,6 +20,9 @@
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="lib/js/jquery-3.3.1.min.js"><\/script>')</script>
+
 	<!-- Printing and PDF exports -->
 	<script>
         var link = document.createElement( 'link' );
@@ -313,9 +316,10 @@
 				<embed id="dependency-diagram-before" type="image/svg+xml" style="width: 960px; height: 500px; border:1px solid black; " src="dependency_diagram/before.svg">
 
 				<script type="application/javascript">
-                    document.addEventListener("DOMContentLoaded", function(){
+                    $(document).ready(function() {
                         svgPanZoom('#dependency-diagram-before', {
                             zoomEnabled: true,
+                            panEnabled: true,
                             controlIconsEnabled: true,
                             fit: true,
                             center: true,
@@ -769,14 +773,15 @@
 
 
 			<section id="mitigation-dependency-diagram" data-background-color="white">
-				<h2>Current Dependency Diagram</h2>
+				<h2>Mitigation Dependency Diagram</h2>
 
 				<embed id="dependency-diagram-after" type="image/svg+xml" style="width: 960px; height: 500px; border:1px solid black; " src="dependency_diagram/after.svg">
 
 				<script type="application/javascript">
-                    document.addEventListener("DOMContentLoaded", function(){
+                    $(document).ready(function() {
                         svgPanZoom('#dependency-diagram-after', {
                             zoomEnabled: true,
+							panEnabled: true,
                             controlIconsEnabled: true,
                             fit: true,
                             center: true,
