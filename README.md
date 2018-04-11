@@ -34,6 +34,11 @@ Evaluation:
     • Handling Q&A (10%)
     • Presentation material & written submission (20%)
 
+# PDF Export
+
+https://github.com/astefanutti/decktape
+npm install -g decktape
+
 # Slide Controls
 
 S = Notes
