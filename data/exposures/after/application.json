@@ -9,6 +9,15 @@
         "y": 2
       }]
     },
+	},
+		{
+      "label": "App Instance Failure (Before)",
+      "backgroundColor": "#996b3e",
+      "data": [{
+        "x": 2,
+        "y": 4
+      }]
+    },
     {
       "label": "Bad Deployment",
       "backgroundColor": "#654236",
@@ -40,6 +49,14 @@
       "data": [{
         "x": 3,
         "y": 3
+      }]
+    },
+		{
+      "label": "App Instance Failure (Before)",
+      "backgroundColor": "#996b3e",
+      "data": [{
+        "x": 3,
+        "y": 4
       }]
     },
     {

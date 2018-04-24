@@ -9,6 +9,14 @@
         "y": 3
       }]
     },
+	{
+      "label": "App Instance Failure",
+      "backgroundColor": "#996b3e",
+      "data": [{
+        "x": 3,
+        "y": 4
+      }]
+    },
     {
       "label": "Bad Deployment",
       "backgroundColor": "#654236",
